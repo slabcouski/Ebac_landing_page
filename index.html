@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +14,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
-    Título
+    <!-- Título -->
     <title>Landing Page</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <header class="navbar navbar-expand-lg sticky-top">
+            <nav class="container-xxl flex-wrap flex-lg-nowrap">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="./assets/img/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
+                    <div class="offcanvas-header">
+                        <a class="offcanvas-title" id="navbarOffcanvasLabel" href="">
+                            <img class="logo" src="./assets/img/logo.png" alt="">
+                        </a>
+                        <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <hr class="d-lg-none">
+                    <div class="offcanvas-body">
+                        <ul class="nav justify-content-center m-lg-auto ">
+                            <li class="nav-item">
+                                <form class="form-control mt-sm-2 bg-danger rounded-5">
+                                    <i class="bi bi-search"></i>
+                                    <input class="border-0 bg-danger" type="search" placeholder="Buscar">
+                                </form>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav flex-row flex-wrap">
+                            <li class="nav-item col-6 col-lg-auto mt-sm-2 d-flex justify-content-center">
+                                <button class="btn btn-outline-secondary" type="button" aria-current="page" href="#">Inscrever</button>
+                            </li>
+                            <li class="nav-item col-6 col-lg-auto mt-sm-2 d-flex justify-content-center">
+                                <a class="nav-link" href="#">Login</a>
+                            </li>
+                            <li class="nav-item col-6 col-lg-auto mt-sm-2 d-flex justify-content-center">
+                                <button class="btn btn-outline-danger border-0 mt-1" href="#"><i class="bi bi-heart"></i></button>
+                            </li>
+                            <li class="nav-item col-6 col-lg-auto mt-sm-2 d-flex justify-content-center">
+                                <button class="btn btn-outline-secondary border-0 mt-1"><i class="bi bi-handbag"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
